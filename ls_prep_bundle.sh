@@ -7,7 +7,9 @@ if [ "x$BUNDLE" = "x" ]; then
 	cat - 1>&2 <<EOF
 Usage: $0 <bundle> [ <file> ... ]"
 Unzip a zipped bundle of LearningSuite submissions for an assigment, each with
-its own directory, named numerically (e.g., "001_...", "002_...", etc.).
+its own directory, named numerically (e.g., "001_...", "002_...", etc.).  Copy
+any files specified on the command line to each directory, e.g., for building,
+testing, grading, etc.
 EOF
 	exit 1
 fi
